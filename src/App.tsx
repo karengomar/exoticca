@@ -1,7 +1,8 @@
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import * as React from "react";
 import styled from "styled-components";
-import CardCarrousel from './components/slides/card-carrousel.component'
+import CardCarousel from "./components/slides/card-carousel.component";
+import NavBar from "./components/nav-bar/nav-bar.component";
 
 const Home = styled.div``;
 
@@ -21,8 +22,9 @@ const Link = styled.a`
 
 export default function App() {
   return (
-    <Container>
-      <CardCarrousel />
+    <Container maxWidth="xl">
+      <NavBar />
+      <CardCarousel />
     </Container>
   );
 }
